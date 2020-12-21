@@ -12,6 +12,13 @@
 		1B67CF64258FF8F10067507C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B67CF63258FF8F10067507C /* Assets.xcassets */; };
 		1B67CF67258FF8F10067507C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B67CF65258FF8F10067507C /* LaunchScreen.storyboard */; };
 		1B67CF75258FF98F0067507C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B67CF74258FF98F0067507C /* MainViewController.swift */; };
+		1B67CF7D25900ADE0067507C /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B67CF7C25900ADE0067507C /* UIKitExtensions.swift */; };
+		1B67CF8C25900F170067507C /* SecondarySidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B67CF8B25900F170067507C /* SecondarySidebar.swift */; };
+		1B67CF8F25900F720067507C /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B67CF8E25900F720067507C /* DetailsViewController.swift */; };
+		1B67CF982590102D0067507C /* SidebarSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B67CF932590102D0067507C /* SidebarSection.swift */; };
+		1B67CF992590102D0067507C /* SidebarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B67CF942590102D0067507C /* SidebarItem.swift */; };
+		1B67CF9B2590102D0067507C /* SidebarDataSourceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B67CF962590102D0067507C /* SidebarDataSourceFactory.swift */; };
+		1B67CF9C2590102D0067507C /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B67CF972590102D0067507C /* Sidebar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		1B67CF66258FF8F10067507C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B67CF68258FF8F10067507C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B67CF74258FF98F0067507C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		1B67CF7C25900ADE0067507C /* UIKitExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitExtensions.swift; sourceTree = "<group>"; };
+		1B67CF8B25900F170067507C /* SecondarySidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondarySidebar.swift; sourceTree = "<group>"; };
+		1B67CF8E25900F720067507C /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		1B67CF932590102D0067507C /* SidebarSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidebarSection.swift; sourceTree = "<group>"; };
+		1B67CF942590102D0067507C /* SidebarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidebarItem.swift; sourceTree = "<group>"; };
+		1B67CF962590102D0067507C /* SidebarDataSourceFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidebarDataSourceFactory.swift; sourceTree = "<group>"; };
+		1B67CF972590102D0067507C /* Sidebar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +69,14 @@
 			isa = PBXGroup;
 			children = (
 				1B67CF70258FF9250067507C /* App+Scene Delegate */,
+				1B67CF7B25900ADE0067507C /* Utilities */,
+				1B67CF922590102D0067507C /* Sidebar */,
 				1B67CF63258FF8F10067507C /* Assets.xcassets */,
 				1B67CF65258FF8F10067507C /* LaunchScreen.storyboard */,
 				1B67CF68258FF8F10067507C /* Info.plist */,
 				1B67CF74258FF98F0067507C /* MainViewController.swift */,
+				1B67CF8B25900F170067507C /* SecondarySidebar.swift */,
+				1B67CF8E25900F720067507C /* DetailsViewController.swift */,
 			);
 			path = MonthPickerTest;
 			sourceTree = "<group>";
@@ -70,6 +88,25 @@
 				1B67CF5C258FF8F00067507C /* SceneDelegate.swift */,
 			);
 			path = "App+Scene Delegate";
+			sourceTree = "<group>";
+		};
+		1B67CF7B25900ADE0067507C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1B67CF7C25900ADE0067507C /* UIKitExtensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		1B67CF922590102D0067507C /* Sidebar */ = {
+			isa = PBXGroup;
+			children = (
+				1B67CF932590102D0067507C /* SidebarSection.swift */,
+				1B67CF942590102D0067507C /* SidebarItem.swift */,
+				1B67CF962590102D0067507C /* SidebarDataSourceFactory.swift */,
+				1B67CF972590102D0067507C /* Sidebar.swift */,
+			);
+			path = Sidebar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,7 +180,14 @@
 			files = (
 				1B67CF75258FF98F0067507C /* MainViewController.swift in Sources */,
 				1B67CF5B258FF8F00067507C /* AppDelegate.swift in Sources */,
+				1B67CF982590102D0067507C /* SidebarSection.swift in Sources */,
+				1B67CF8F25900F720067507C /* DetailsViewController.swift in Sources */,
+				1B67CF9B2590102D0067507C /* SidebarDataSourceFactory.swift in Sources */,
+				1B67CF7D25900ADE0067507C /* UIKitExtensions.swift in Sources */,
+				1B67CF992590102D0067507C /* SidebarItem.swift in Sources */,
 				1B67CF5D258FF8F00067507C /* SceneDelegate.swift in Sources */,
+				1B67CF9C2590102D0067507C /* Sidebar.swift in Sources */,
+				1B67CF8C25900F170067507C /* SecondarySidebar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
