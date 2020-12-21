@@ -111,7 +111,7 @@ private class DateCell: UICollectionViewCell {
         let horizontalStack = UIStackView(arrangedSubviews: salahTimingsLabels)
         
         horizontalStack.distribution = .fillEqually
-        horizontalStack.layoutMargins = .init(top: 0, left: 10, bottom: 0, right: -10)
+        horizontalStack.layoutMargins = .init(top: 0, left: 10, bottom: 0, right: 0)
         horizontalStack.isLayoutMarginsRelativeArrangement = true
         
         let verticalStack = UIStackView(arrangedSubviews: [dateLabel, horizontalStack])
